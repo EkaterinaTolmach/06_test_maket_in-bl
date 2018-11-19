@@ -16,6 +16,7 @@
 ul {
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
@@ -46,4 +47,44 @@ body {
     margin: 0;
     font-family: 'Open Sans', arial, sans-serif;
 }
+.template-width {
+    width: 1024px;
+    margin: 0 auto;
+}
+.inline-block {
+    display: inline-block;
+}
+* {
+    outline: 1px solid red;
+}
 /*-----------------------Конец "Общие стили"------------------------*/
+
+
+/*-----------------------Начало блока "header__account-options"------------------------*/
+.header__account-options {
+    width: 100%;
+    background: #4cb1ca;
+    font-size: 13px;
+}
+.header__container {
+    padding: 10px 0;
+    text-align: justify;
+}
+.header__options {
+    text-align: left;
+}
+.options {
+    min-width: 250px;
+}
+.header__account-menu {
+    min-width: 360px;
+    text-align: right;
+}
+.options__languages {
+
+}
+.options__title {
+    color: #bef2ff;
+}
+
+/*-----------------------Конец блока "header__account-options"------------------------*/
