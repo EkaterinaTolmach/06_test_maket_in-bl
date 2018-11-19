@@ -57,6 +57,20 @@ body {
 * {
     outline: 1px solid red;
 }
+html {
+    font-size: 14px;
+}
+.justify {
+    line-height: 0;
+}
+.justify::after {
+    display: inline-block;
+    content: "";
+    width: 100%;
+    height: 0;
+    visibility: hidden;
+    overflow: hidden;
+}
 /*-----------------------Конец "Общие стили"------------------------*/
 
 
@@ -64,7 +78,7 @@ body {
 .header__account-options {
     width: 100%;
     background: #4cb1ca;
-    font-size: 13px;
+    font-size: 0.93rem;
 }
 .header__container {
     padding: 10px 0;
@@ -72,19 +86,24 @@ body {
 }
 .header__options {
     text-align: left;
+    line-height: normal;
 }
 .options {
     min-width: 250px;
 }
 .header__account-menu {
     min-width: 360px;
-    text-align: right;
+    line-height: normal;
 }
 .options__languages {
 
 }
 .options__title {
     color: #bef2ff;
+}
+.account-menu {
+    width: 100%;
+    text-align: justify;
 }
 
 /*-----------------------Конец блока "header__account-options"------------------------*/
