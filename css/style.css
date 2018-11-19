@@ -48,26 +48,27 @@ body {
     font-family: 'Open Sans', arial, sans-serif;
 }
 .template-width {
-    width: 1024px;
+    max-width: 1024px;
     margin: 0 auto;
 }
 .inline-block {
     display: inline-block;
 }
 * {
-    outline: 1px solid red;
-}
-html {
-    font-size: 14px;
+    /*outline: 1px solid red;*/
 }
 .justify {
     line-height: 0;
+    font-size: 1px;
 }
 .justify::after {
     display: inline-block;
     content: "";
     width: 100%;
+    line-height: 0;
     height: 0;
+    font-size: 0;
+    margin-top: -1px;
     visibility: hidden;
     overflow: hidden;
 }
@@ -78,10 +79,9 @@ html {
 .header__account-options {
     width: 100%;
     background: #4cb1ca;
-    font-size: 0.93rem;
 }
 .header__container {
-    padding: 10px 0;
+    /*padding: 10px 0;*/
     text-align: justify;
 }
 .header__options {
@@ -89,10 +89,11 @@ html {
     line-height: normal;
 }
 .options {
-    min-width: 250px;
+    max-width: 250px;
+    font-size: 13px;
 }
 .header__account-menu {
-    min-width: 360px;
+    max-width: 360px;
     line-height: normal;
 }
 .options__languages {
@@ -104,6 +105,28 @@ html {
 .account-menu {
     width: 100%;
     text-align: justify;
+    font-size: 13px;
 }
-
+.account-menu__item {
+    display: inline-block;
+    text-align: center;
+    padding: 15px 10px;
+    /*margin-right: 12px;*/
+    /*line-height: 11px;*/
+    font-size: 13px;
+    color: #ffffff;
+    /*border-right: 1px solid #ffffff;*/
+}
+/*.account-menu__item::after {*/
+    /*vertical-align: middle;*/
+    /*display: inline-block;*/
+    /*content: "";*/
+    /*width: 1px;*/
+    /*margin: 0 15px;*/
+    /*height: 11px;*/
+    /*background-color: #ffffff;*/
+/*}*/
+. {
+    border-right: none;
+}
 /*-----------------------Конец блока "header__account-options"------------------------*/
