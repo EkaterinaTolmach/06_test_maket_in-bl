@@ -461,6 +461,16 @@ body {
     margin-right: 25px;
     margin-bottom: 26px;
 }
+.new-products__items {
+    padding-left: 3px;
+}
+.new-products__title {
+    margin-bottom: 17px;
+}
+.new-products__item {
+    margin-right: 25px;
+    margin-bottom: 26px;
+}
 /*-----------------------Конец блока "content"------------------------*/
 .sidebar {
     content: "";
