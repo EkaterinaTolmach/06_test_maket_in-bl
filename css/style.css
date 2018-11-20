@@ -331,11 +331,13 @@ body {
 .featured-product__items {
     padding-left: 3px;
 }
-.featured-product__title {
+.section-title {
     color: #635f57;
     font-size: 24px;
     text-transform: uppercase;
     letter-spacing: -0.24px;
+}
+.featured-product__title {
     margin-bottom: 17px;
 }
 .featured-product__item {
@@ -393,7 +395,6 @@ body {
     text-align: center;
 }
 .product-item__descr {
-
     padding-left: 3px;
     margin-top: 8px;
     vertical-align: middle;
@@ -449,6 +450,16 @@ body {
     top: -12px;
     left: -12px;
     z-index: 115;
+}
+.staff-pick__items {
+    padding-left: 3px;
+}
+.staff-pick__title {
+    margin-bottom: 17px;
+}
+.staff-pick__item {
+    margin-right: 25px;
+    margin-bottom: 26px;
 }
 /*-----------------------Конец блока "content"------------------------*/
 .sidebar {
