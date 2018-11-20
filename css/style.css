@@ -132,6 +132,10 @@ body {
 .account-menu__link {
     color: #ffffff;
     padding: 12px 10px;
+    transition: 0.2s;
+}
+.account-menu__link:hover {
+    color: rgba(154, 226, 244, 0.8);
 }
 /*.account-menu__item::after {*/
     /*vertical-align: middle;*/
@@ -160,13 +164,17 @@ body {
     font-size: 36px;
     font-weight: 700;
     text-transform: uppercase;
-    /*letter-spacing: -0.9px;*/
 }
 .header__nav {
     vertical-align: middle;
     line-height: normal;
     margin-right: 99px;
 }
+.top_nav__item {
+    border-bottom: 1px solid transparent;
+    transition: 0.5s;
+}
+
 .top_nav__link {
     color: #656565;
     font-size: 14px;
@@ -174,11 +182,20 @@ body {
     text-transform: uppercase;
     letter-spacing: -0.14px;
     padding: 9px 11px;
+    transition: 0.5s;
+    /*border-bottom: 1px solid #656565;*/
+}
+.top_nav__item:hover {
+    border-bottom: 1px solid #656565;
+    transition: ease-out 0.5s;
 }
 .header__search {
     line-height: normal;
     vertical-align: middle;
     margin-right: 8px;
+}
+.search__form {
+    position: relative;
 }
 .search__field {
     width: 174px;
@@ -188,6 +205,23 @@ body {
     color: #b7b7b7;
     font-size: 13px;
     padding-left: 10px;
+    position: relative;
+    z-index: 50;
+}
+.search__field:focus::placeholder {
+    color: transparent;
+    transition: 0.2s;
+}
+.search__btn {
+    border: none;
+    cursor: pointer;
+    width: 29px;
+    height: 29px;
+    background: transparent url("../img/ico_search.png") center center no-repeat;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 55;
 }
 .header__purchases {
     line-height: normal;
