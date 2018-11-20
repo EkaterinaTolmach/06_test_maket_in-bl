@@ -60,6 +60,7 @@ body {
 .justify {
     line-height: 0;
     font-size: 1px;
+    text-align: justify;
 }
 .justify::after {
     display: inline-block;
@@ -145,3 +146,72 @@ body {
 
 /*-----------------------Конец блока "header__account-options"------------------------*/
 
+/*-----------------------Начало блока "header__navigation"------------------------*/
+.header__wrap {
+    padding: 29px 0;
+}
+.header__logo {
+    vertical-align: middle;
+    line-height: normal;
+    margin-right: 41px;
+}
+.logo {
+    color: #656565;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    /*letter-spacing: -0.9px;*/
+}
+.header__nav {
+    vertical-align: middle;
+    line-height: normal;
+    margin-right: 99px;
+}
+.top_nav__link {
+    color: #656565;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.14px;
+    padding: 9px 11px;
+}
+.header__search {
+    line-height: normal;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+.search__field {
+    width: 174px;
+    height: 29px;
+    border: 1px solid #c6c6c6;
+    background-color: #ffffff;
+    color: #b7b7b7;
+    font-size: 13px;
+    padding-left: 10px;
+}
+.header__purchases {
+    line-height: normal;
+    width: 150px;
+    vertical-align: middle;
+}
+.header__labels {
+    width: 35px;
+    height: 35px;
+    vertical-align: middle;
+    background: url("../img/ico_labels.png") center center no-repeat;
+}
+.header__busket {
+    width: 35px;
+    height: 35px;
+    vertical-align: middle;
+    background: url("../img/ico_busket.png") center center no-repeat;
+    margin-right: 11px;
+}
+.header__busket-count {
+    color: #656565;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: -0.14px;
+}
+/*-----------------------Конец блока "header__navigation"------------------------*/
