@@ -255,6 +255,7 @@ body {
     max-width: 1400px;
     margin: 0 auto;
     position: relative;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
 .main-slider__img {
@@ -321,21 +322,37 @@ body {
 
 /*-----------------------Начало блока "content"------------------------*/
 .container {
-    padding: 49px 0;
+    padding-top: 38px;
+}
+.content {
+    margin-right: -28px;
+    max-width: 77.25%;
+}
+.featured-product__items {
+    padding-left: 3px;
 }
 .featured-product__title {
     color: #635f57;
     font-size: 24px;
     text-transform: uppercase;
     letter-spacing: -0.24px;
-    margin-bottom: 24px;
+    margin-bottom: 17px;
+}
+.featured-product__item {
+    margin-right: 25px;
+    margin-bottom: 26px;
 }
 .product-item {
     width: 233px;
     box-shadow: 0 0 5px #eaeaea;
     border: 8px solid #ffffff;
     background-color: #ffffff;
-    padding-bottom: 25px;
+    padding-bottom: 19px;
+    position: relative;
+    transition: 0.2s;
+}
+.product-item:hover {
+    transform: scale(1.05,1.05);
 }
 .product-item__img {
     width: 217px;
@@ -376,10 +393,25 @@ body {
     text-align: center;
 }
 .product-item__descr {
-    margin-top: 15px;
+
+    padding-left: 3px;
+    margin-top: 8px;
+    vertical-align: middle;
+}
+.product-item__text {
+    vertical-align: middle;
+    width: 157px;
 }
 .product-item__descr::after {
-    
+    line-height: normal;
+    font-size: 1px;
+    vertical-align: middle;
+    text-align: right;
+    display: inline-block;
+    width: 47px;
+    height: 47px;
+    content: "";
+    background: url("../img/ico_add_busket.png") center center no-repeat;
 }
 .product-item__name {
     color: #464148;
@@ -391,4 +423,38 @@ body {
     color: #7db122;
     font-size: 18px;
 }
+.product-item__price--sale {
+    color: #464148;
+    font-size: 14px;
+    text-decoration: line-through;
+}
+.product-item--new::after {
+    display: block;
+    content: "";
+    width: 97px;
+    height: 94px;
+    background: url("../img/ico_new.png") center center no-repeat;
+    position: absolute;
+    top: -12px;
+    right: -12px;
+    z-index: 115;
+}
+.product-item--sale::after {
+    display: block;
+    content: "";
+    width: 97px;
+    height: 94px;
+    background: url("../img/ico_sale.png") center center no-repeat;
+    position: absolute;
+    top: -12px;
+    left: -12px;
+    z-index: 115;
+}
 /*-----------------------Конец блока "content"------------------------*/
+.sidebar {
+    content: "";
+    width: 233px;
+    height: 100%;
+    background-color: #bef2ff;
+    max-width: 22.75%;
+}
