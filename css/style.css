@@ -42,6 +42,7 @@ a {
 }
 button, input {
     outline: none;
+    border: none;
 }
 body {
     margin: 0;
@@ -202,11 +203,13 @@ body {
     height: 29px;
     border: 1px solid #c6c6c6;
     background-color: #ffffff;
-    color: #b7b7b7;
     font-size: 13px;
     padding-left: 10px;
     position: relative;
     z-index: 50;
+}
+.search__field::placeholder {
+    color: #b7b7b7;
 }
 .search__field:focus::placeholder {
     color: transparent;
@@ -472,6 +475,9 @@ body {
     margin-bottom: 26px;
 }
 /*-----------------------Конец блока "content"------------------------*/
+
+
+/*-----------------------Начало блока "sidebar"------------------------*/
 .sidebar {
     height: 100%;
     max-width: 22.75%;
@@ -483,6 +489,7 @@ body {
     height: 485px;
     box-shadow: 0 0 5px #eaeaea;
     border-top: 4px solid #4cb1ca;
+    margin-bottom: 31px;
 }
 .aside-slider {
     position: relative;
@@ -522,6 +529,18 @@ body {
     background-color: #4cb1ca;
     color: #ffffff;
     font-size: 14px;
+    transition: 0.3s;
+}
+.aside-slider__link:hover {
+    background-color: #7eb123;
+}
+.aside-slider__link:active {
+    position: relative;
+    top: 1px;
+    outline: none;
+}
+.aside-slider__link:visited {
+    outline: none;
 }
 .aside-slider__btn {
     width: 100%;
@@ -529,3 +548,65 @@ body {
     position: absolute;
     bottom: 16px;
 }
+.subscribe {
+    box-shadow: 0 0 5px #eaeaea;
+    border-top: 4px solid #4cb1ca;
+    background-color: #ffffff;
+    padding: 17px 22px 31px;
+}
+.subscribe__title {
+    text-align: center;
+    color: #635f57;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+.subscribe__descr {
+    color: #696969;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 7px;
+}
+.subscribe__descr::after {
+    vertical-align: middle;
+    display: inline-block;
+    content: "";
+    width: 85px;
+    height: 1px;
+    background-color: #ededed;
+}
+.subscribe__form {
+    text-align: center;
+}
+.subscribe__email {
+    width: 185px;
+    height: 29px;
+    border: 1px solid rgba(198, 198, 198, 0.5);
+    padding-left: 5px;
+    margin-bottom: 18px;
+}
+.subscribe__email::placeholder {
+    color: #b7b7b7;
+}
+.subscribe__email:focus::placeholder {
+    color: transparent;
+    transition: 0.2s;
+}
+.subscribe__btn {
+    cursor: pointer;
+    border: none;
+    width: 112px;
+    height: 44px;
+    background-color: #7eb123;
+    color: #ffffff;
+    font-size: 14px;
+    transition: 0.3s;
+}
+.subscribe__btn:hover {
+    background-color: #4cb1ca;
+}
+.subscribe__btn:active {
+    position: relative;
+    top: 1px;
+}
+/*-----------------------Конец блока "sidebar"------------------------*/
