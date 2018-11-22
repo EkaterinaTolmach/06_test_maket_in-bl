@@ -326,6 +326,7 @@ body {
 /*-----------------------Начало блока "content"------------------------*/
 .container {
     padding-top: 38px;
+    padding-bottom: 50px;
 }
 .content {
     margin-right: -7px;
@@ -612,5 +613,45 @@ body {
 /*-----------------------Конец блока "sidebar"------------------------*/
 
 /*-----------------------Начало блока "footer"------------------------*/
-
+.footer__info {
+    width: 100%;
+    background-color: #4cb1ca;
+}
+.footer__info-wrap {
+    padding: 21px 0 20px;
+    color: #ffffff;
+    font-size: 21px;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+.footer__shipping, .footer__call-info {
+    vertical-align: middle;
+    width: 49%;
+}
+.footer__call-info {
+    text-align: center;
+}
+.footer__shipping::before {
+    vertical-align: middle;
+    margin-right: 14px;
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+    background: #ffffff url("../img/ico_shipping.png") no-repeat center center;
+}
+.footer__call-info::before {
+    vertical-align: middle;
+    margin-right: 14px;
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+    background: #ffffff url("../img/ico_phone.png") no-repeat center center;
+}
+.footer__call-info a {
+    color: #ffffff;
+}
 /*-----------------------Конец блока "footer"------------------------*/
