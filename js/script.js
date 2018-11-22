@@ -11,4 +11,12 @@ $(document).ready(function() {
         });
     }
 
+    if($('.aside-slider__wrap')) {
+        $('.aside-slider__wrap').slick({
+            infinite: true,
+            dots: true,
+            autoplay: true
+        });
+    }
+
 });
