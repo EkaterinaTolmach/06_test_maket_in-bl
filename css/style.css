@@ -332,6 +332,9 @@ body {
     margin-right: -7px;
     max-width: 77.25%;
 }
+.featured-product {
+    margin-bottom: 20px;
+}
 .featured-product__items {
     padding-left: 3px;
 }
@@ -455,6 +458,9 @@ body {
     left: -12px;
     z-index: 115;
 }
+.staff-pick {
+    margin-bottom: 29px;
+}
 .staff-pick__items {
     padding-left: 3px;
 }
@@ -469,7 +475,7 @@ body {
     padding-left: 3px;
 }
 .new-products__title {
-    margin-bottom: 17px;
+    margin-bottom: 22px;
 }
 .new-products__item {
     margin-right: 25px;
@@ -629,7 +635,7 @@ body {
     width: 49%;
 }
 .footer__call-info {
-    text-align: center;
+    padding-left: 48px;
 }
 .footer__shipping::before {
     vertical-align: middle;
