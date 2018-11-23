@@ -237,15 +237,25 @@ body {
 .header__labels {
     width: 35px;
     height: 35px;
+    border-radius: 50%;
     vertical-align: middle;
-    background: url("../img/ico_labels.png") center center no-repeat;
+    background: #7db122 url("../img/ico_labels.png") center center no-repeat;
+    transition: 0.3s;
+}
+.header__labels:hover {
+    background: #4cb1ca url("../img/ico_labels.png") center center no-repeat;
 }
 .header__busket {
     width: 35px;
     height: 35px;
+    border-radius: 50%;
     vertical-align: middle;
-    background: url("../img/ico_busket.png") center center no-repeat;
+    background: #7db122 url("../img/ico_basket.png") center center no-repeat;
     margin-right: 11px;
+    transition: 0.3s;
+}
+.header__busket:hover {
+    background: #4cb1ca url("../img/ico_basket.png") center center no-repeat;
 }
 .header__busket-count {
     color: #656565;
@@ -815,16 +825,18 @@ body {
     height: 43px;
     background: #ffffff url("../img/ico_twitter.png") center center no-repeat;
 }
-.information__link {
+.information__label {
     color: #ffffff;
     font-size: 13px;
     line-height: 24px;
     transition: 0.3s;
+    cursor: pointer;
 }
-.information__link:hover {
+.information__label:hover {
     color: #9ae2f4;
+
 }
-.information__item::before {
+.information__label::before {
     display: inline-block;
     content: "";
     width: 9px;
@@ -832,6 +844,33 @@ body {
     background: url("../img/arrow_down.png") center center no-repeat;
     transform: rotateZ(-90deg);
     margin-right: 5px;
+    transition: 0.3s;
+}
+.information__check {
+    display: none;
+}
+.sublist__link {
+    color: #ffffff;
+    font-size: 13px;
+    line-height: 24px;
+    transition: 0.3s;
+    padding-left: 19px;
+}
+.sublist__link:hover {
+    color: #9ae2f4;
+}
+.sublist {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease-in-out;
+}
+.information__check:checked ~.sublist {
+    height: 170px;
+    transition: height 0.3s ease-in-out;
+}
+.information__check:checked ~.information__label::before {
+    transform: rotateZ(0);
+    transition: 0.3s;
 }
 .contacts__socials {
     margin-top: 18px;
@@ -866,4 +905,5 @@ body {
 .social-ico__facebook {
     background: #ffffff url("../img/ico_facebook.png") center center no-repeat;
 }
+
 /*-----------------------Конец блока "footer"------------------------*/
