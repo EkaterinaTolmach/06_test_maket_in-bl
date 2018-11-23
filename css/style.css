@@ -40,6 +40,9 @@ input[type='radio'].visually-hidden {
 a {
     text-decoration: none;
 }
+p {
+    margin: 0;
+}
 button, input {
     outline: none;
     border: none;
@@ -624,7 +627,7 @@ body {
     background-color: #4cb1ca;
 }
 .footer__addition-info-wrap {
-    padding: 21px 0 20px;
+    padding: 21px 0 18px;
     color: #ffffff;
     font-size: 21px;
     text-transform: uppercase;
@@ -708,18 +711,22 @@ body {
 .facebook-widget {
     max-width: 230px;
     vertical-align: top;
+    margin-right: 4.98%;
 }
 .twitter-widget {
     max-width: 222px;
     vertical-align: top;
+    margin-right: 6.65%;
 }
 .information {
     max-width: 186px;
     vertical-align: top;
+    margin-right: 6.05%;
 }
 .contacts {
     max-width: 196px;
     vertical-align: top;
+    margin-right: -6px;
 }
 .footer__title {
     color: #f5f5f5;
@@ -727,22 +734,23 @@ body {
     text-transform: uppercase;
 }
 .facebook-widget__title {
-    margin-bottom: 14px;
+    margin-bottom: 15px;
 }
 .twitter-widget__title {
-    margin-bottom: 30px;
+    margin-bottom: 26px;
 }
 .information__title {
-    margin-bottom: 35px;
+    margin-bottom: 23px;
 }
 .contacts__title {
-    margin-bottom: 36px;
+    margin-bottom: 23px;
 }
 .facebook-widget__counter {
     color: #ffffff;
     font-size: 13px;
     font-weight: 300;
     line-height: 20px;
+    margin-bottom: 1px;
 }
 .facebook-widget__likes {
     width: 47px;
@@ -756,14 +764,14 @@ body {
     margin-top: 4px;
 }
 .facebook-widget__members {
-    padding: 7px 0 1px;
+    padding: 7px 0 3px;
     border-top: 1px solid #4cb1ca;
     border-bottom: 1px solid #4cb1ca;
     margin-right: -11px;
 }
 .facebook-widget__member-item {
     margin-right: 5px;
-    margin-bottom: 4px;
+    margin-bottom: 6px;
     transition: 0.3s;
     line-height: 0;
     border: 1px solid transparent;
@@ -774,5 +782,88 @@ body {
 .facebook-widget__member-img--opposite {
     transform: scale(-1,1);
 }
-
+.twitter-widget__item {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 13px;
+    line-height: 19px;
+    max-height: 75px;
+    margin-bottom: 26px;
+}
+.twitter-widget__item:last-child {
+    margin-bottom: 0;
+}
+.twitter-widget__text {
+    display: inline-block;
+    max-width: 165px;
+    overflow: hidden;
+}
+.twitter-widget__tag-link {
+    color: #9ae2f4;
+    transition: 0.3s;
+}
+.twitter-widget__tag-link:hover {
+    color: #0b4b5a;
+}
+.twitter-widget__item::before {
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: top;
+    content: "";
+    border-radius: 50%;
+    width: 43px;
+    height: 43px;
+    background: #ffffff url("../img/ico_twitter.png") center center no-repeat;
+}
+.information__link {
+    color: #ffffff;
+    font-size: 13px;
+    line-height: 24px;
+    transition: 0.3s;
+}
+.information__link:hover {
+    color: #9ae2f4;
+}
+.information__item::before {
+    display: inline-block;
+    content: "";
+    width: 9px;
+    height: 9px;
+    background: url("../img/arrow_down.png") center center no-repeat;
+    transform: rotateZ(-90deg);
+    margin-right: 5px;
+}
+.contacts__socials {
+    margin-top: 18px;
+    padding-left: 3px;
+}
+.contacts__info {
+    width: 100%;
+    color: #ffffff;
+    font-size: 13px;
+    line-height: 24px;
+    border-bottom: 1px solid #4cb1ca;
+    padding-bottom: 9px;
+    padding-left: 3px;
+}
+.socials__item {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+.social-ico__google-plus {
+    background: #ffffff url("../img/ico_google_plus.png") center center no-repeat;
+}
+.social-ico__linkedin {
+    background: #ffffff url("../img/ico_linkedin.png") center center no-repeat;
+}
+.social-ico__rss {
+    background: #ffffff url("../img/ico_rss.png") center center no-repeat;
+}
+.social-ico__facebook {
+    background: #ffffff url("../img/ico_facebook.png") center center no-repeat;
+}
 /*-----------------------Конец блока "footer"------------------------*/
