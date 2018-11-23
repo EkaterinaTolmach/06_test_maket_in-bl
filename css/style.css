@@ -930,5 +930,27 @@ body {
 .social-ico__facebook {
     background: #ffffff url("../img/ico_facebook.png") center center no-repeat;
 }
-
+.bottom-nav {
+    width: 100%;
+    background-color: #0b4b5a;
+}
+.bottom-nav__wrap {
+    padding-left: 5px;
+}
+.bottom-nav__copy {
+    display: inline-block;
+    color: #8adcf0;
+    font-size: 13px;
+    line-height: 19px;
+}
+.bottom-nav__menu {
+    display: inline-block;
+    font-size: 13px;
+    line-height: 19px;
+}
+.bottom-nav__item {
+    display: inline-block;
+    color: #8adcf0;
+    padding: 20px 10px 20px;
+}
 /*-----------------------Конец блока "footer"------------------------*/
