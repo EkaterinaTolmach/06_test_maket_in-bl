@@ -674,7 +674,7 @@ body {
     border: 1px solid transparent;
     vertical-align: middle;
     transition: 0.3s;
-    margin-right: 14px;
+    margin-right: 18px;
     content: "";
     display: inline-block;
     border-radius: 50%;
@@ -686,7 +686,7 @@ body {
     border: 1px solid transparent;
     transition: 0.3s;
     vertical-align: middle;
-    margin-right: 14px;
+    margin-right: 12px;
     content: "";
     display: inline-block;
     border-radius: 50%;
@@ -702,7 +702,24 @@ body {
     background-color: #39a0b9;
 }
 .footer__main-wrap {
-    padding: 51px 0 55px;
+    padding: 41px 0 53px;
+    vertical-align: top;
+}
+.facebook-widget {
+    max-width: 230px;
+    vertical-align: top;
+}
+.twitter-widget {
+    max-width: 222px;
+    vertical-align: top;
+}
+.information {
+    max-width: 186px;
+    vertical-align: top;
+}
+.contacts {
+    max-width: 196px;
+    vertical-align: top;
 }
 .footer__title {
     color: #f5f5f5;
@@ -710,7 +727,7 @@ body {
     text-transform: uppercase;
 }
 .facebook-widget__title {
-    margin-bottom: 25px;
+    margin-bottom: 14px;
 }
 .twitter-widget__title {
     margin-bottom: 30px;
@@ -721,4 +738,41 @@ body {
 .contacts__title {
     margin-bottom: 36px;
 }
+.facebook-widget__counter {
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 20px;
+}
+.facebook-widget__likes {
+    width: 47px;
+    height: 23px;
+    background: url("../img/ico_facebook_likes.png") center center no-repeat;
+}
+.facebook-widget__plugin-name {
+    color: #ffffff;
+    font-size: 13px;
+    line-height: 20px;
+    margin-top: 4px;
+}
+.facebook-widget__members {
+    padding: 7px 0 1px;
+    border-top: 1px solid #4cb1ca;
+    border-bottom: 1px solid #4cb1ca;
+    margin-right: -11px;
+}
+.facebook-widget__member-item {
+    margin-right: 5px;
+    margin-bottom: 4px;
+    transition: 0.3s;
+    line-height: 0;
+    border: 1px solid transparent;
+}
+.facebook-widget__member-item:hover {
+    border: 1px solid #7db122;
+}
+.facebook-widget__member-img--opposite {
+    transform: scale(-1,1);
+}
+
 /*-----------------------Конец блока "footer"------------------------*/
