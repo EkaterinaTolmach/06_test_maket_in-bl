@@ -99,13 +99,13 @@ body {
 }
 .options__choose-lang, .options__choose-currency {
     color: #ffffff;
-
+    transition: 0.3;
 }
-.options__choose-lang {
-
+.options__choose-lang:hover::after, .options__choose-currency:hover::after {
+    transform: rotateZ(90deg);
 }
-
 .options__choose-lang::after, .options__choose-currency::after {
+    transition: 0.3s ease-in-out;
     padding-left: 5px;
     display: inline-block;
     content: "";
@@ -177,6 +177,7 @@ body {
 .top_nav__item {
     border-bottom: 1px solid transparent;
     transition: 0.5s;
+    position: relative;
 }
 
 .top_nav__link {
@@ -189,10 +190,25 @@ body {
     transition: 0.5s;
     /*border-bottom: 1px solid #656565;*/
 }
-.top_nav__item:hover {
-    border-bottom: 1px solid #656565;
-    transition: ease-out 0.5s;
+.top_nav__item:hover::after {
+    width: 100%;
+    transition: width ease-out 0.5s;
 }
+.top_nav__item:actve::after {
+    width: 100%;
+}
+.top_nav__item::after {
+    display: inline-block;
+    width: 0;
+    left: 50%;
+    transform:translateX(-50%);
+    height: 2px;
+    content: "";
+    background-color: #7db122;
+    position: absolute;
+    bottom: 0;
+}
+
 .header__search {
     line-height: normal;
     vertical-align: middle;
@@ -766,6 +782,10 @@ body {
     width: 47px;
     height: 23px;
     background: url("../img/ico_facebook_likes.png") center center no-repeat;
+    transition: 0.3s;
+}
+.facebook-widget__likes:hover {
+    transform: scale(1.05,1.05);
 }
 .facebook-widget__plugin-name {
     color: #ffffff;
@@ -891,7 +911,12 @@ body {
     height: 36px;
     transition: 0.3s;
     border-radius: 50%;
-    margin-right: 5px;
+    margin-right: 3px;
+    border: 1px solid #ffffff;
+}
+.socials__item:hover {
+    transform: scale(1.1,1.1);
+    border: 1px solid #7db122;
 }
 .social-ico__google-plus {
     background: #ffffff url("../img/ico_google_plus.png") center center no-repeat;
