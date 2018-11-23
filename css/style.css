@@ -637,8 +637,43 @@ body {
 .footer__call-info {
     padding-left: 48px;
 }
-.footer__shipping::before {
+
+.footer__shipping-link {
+    /*vertical-align: middle;*/
+    /*margin-right: 14px;*/
+    /*border-radius: 50%;*/
+    /*width: 65px;*/
+    /*height: 65px;*/
+    /*background: #ffffff url("../img/ico_shipping.png") no-repeat center center;*/
+    transition: 0.3s;
+    color: #ffffff;
+    /*border: 1px solid transparent;*/
+}
+.footer__shipping-link:hover::before {
+    transform: scale(1.1,1.1);
+    /*transform: translateY(-5px);*/
+    border: 1px solid #7db122;
+}
+.footer__call-link:hover::before {
+    transform: scale(1.1,1.1);
+    /*transform: translateY(-5px);*/
+    border: 1px solid #7db122;
+}
+.footer__call-link {
+    /*border: 1px solid transparent;*/
+    transition: 0.3s;
+    color: #ffffff;
+    /*vertical-align: middle;*/
+    /*margin-right: 14px;*/
+    /*border-radius: 50%;*/
+    /*width: 65px;*/
+    /*height: 65px;*/
+    /*background: #ffffff url("../img/ico_phone.png") no-repeat center center;*/
+}
+.footer__shipping-link::before {
+    border: 1px solid transparent;
     vertical-align: middle;
+    transition: 0.3s;
     margin-right: 14px;
     content: "";
     display: inline-block;
@@ -647,7 +682,9 @@ body {
     height: 65px;
     background: #ffffff url("../img/ico_shipping.png") no-repeat center center;
 }
-.footer__call-info::before {
+.footer__call-link::before {
+    border: 1px solid transparent;
+    transition: 0.3s;
     vertical-align: middle;
     margin-right: 14px;
     content: "";
@@ -657,9 +694,9 @@ body {
     height: 65px;
     background: #ffffff url("../img/ico_phone.png") no-repeat center center;
 }
-.footer__call-info a {
-    color: #ffffff;
-}
+/*.footer__call-info a {*/
+    /*color: #ffffff;*/
+/*}*/
 .footer__main {
     width: 100%;
     background-color: #39a0b9;
