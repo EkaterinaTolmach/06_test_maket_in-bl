@@ -5,9 +5,11 @@
     <meta name="viewport"
           content="width=device-width initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/style.css">
+    <link href="plagins/jQueryFormStyler-master/dist/jquery.formstyler.css" rel="stylesheet" />
+    <!--<link href="plagins/jQueryFormStyler-master/dist/jquery.formstyler.theme.css" rel="stylesheet" />-->
     <link rel="stylesheet" href="plagins/slick/slick.css">
     <link rel="stylesheet" href="plagins/slick/slick-theme.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Inline-block_task</title>
 </head>
 <body>
@@ -17,11 +19,25 @@
                 <div class="header__options options inline-block">
                     <div class="options__languages inline-block">
                         <span class="options__title">Language:</span>
-                        <a href="#" class="options__choose-lang">English</a>
+                        <!--<a href="#" class="options__choose-lang">English</a>-->
+                        <form class="language__form" name="language__form" method="post" action="#" enctype="text/plain">
+                            <select title="language" name="language">
+                                <option selected value="eng">English</option>
+                                <option value="rus">Russian</option>
+                                <option value="deu">German</option>
+                            </select>
+                        </form>
                     </div>
                     <div class="options__currency inline-block">
                         <span class="options__title">Currency:</span>
-                        <a href="#" class="options__choose-currency">USD</a>
+                        <!--<a href="#" class="options__choose-currency">USD</a>-->
+                        <form class="currency__form" name="currency__form" method="post" action="#" enctype="text/plain">
+                            <select title="currency" name="currency">
+                                <option selected value="usd">USD</option>
+                                <option value="eur">EUR</option>
+                                <option value="rub">RUB</option>
+                            </select>
+                        </form>
                     </div>
                 </div>
                 <div class="header__account-menu inline-block">
@@ -629,6 +645,7 @@
     </footer>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="plagins/slick/slick.min.js"></script>
+    <script src="plagins/jQueryFormStyler-master/dist/jquery.formstyler.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
