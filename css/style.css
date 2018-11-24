@@ -104,6 +104,9 @@ body {
 .options__choose-lang:hover::after, .options__choose-currency:hover::after {
     transform: rotateZ(90deg);
 }
+.language__form, .currency__form {
+    display: inline-block;
+}
 .options__choose-lang::after, .options__choose-currency::after {
     transition: 0.3s ease-in-out;
     padding-left: 5px;
@@ -157,16 +160,101 @@ body {
     display: none;
 }
 
-    /*-----------------------Конец блока "header__account-options"------------------------*/
+/*-----------------------Конец блока "header__account-options"------------------------*/
+
+/*-----------------------Начало стилей для кастомизированного селекта"------------------------*/
+.jq-selectbox {
+    vertical-align: middle;
+    cursor: pointer;
+}
+.jq-selectbox__select {
+    height: auto;
+    padding: 0 16px 0 10px;
+    color: #ffffff;
+}
+.jq-selectbox.disabled .jq-selectbox__select {
+    border-color: #CCC;
+    background: #F5F5F5;
+    box-shadow: none;
+    color: #888;
+}
+.jq-selectbox__select-text {
+    display: block;
+    width: 100%;
+}
+.jq-selectbox .placeholder {
+    color: #888;
+}
+.jq-selectbox__trigger {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 9px;
+    height: 100%;
+}
+.jq-selectbox__trigger-arrow {
+    position: absolute;
+    bottom: 3px;
+    width: 9px;
+    height: 9px;
+    background: url("../img/arrow_down.png") center center no-repeat;
+    transform: rotateZ(90deg);
+    transition: 0.3s;
+}
+.jq-selectbox:hover .jq-selectbox__trigger-arrow {
+    transform: rotateZ(0);
+    transition: 0.3s;
+}
+.jq-selectbox:active .jq-selectbox__trigger-arrow {
+    transform: rotateZ(0);
+    /*transition: 0.3s;*/
+}
+.jq-selectbox.disabled .jq-selectbox__trigger-arrow {
+    border-top-color: #AAA;
+}
+.jq-selectbox__dropdown {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 2px 0 0;
+    padding: 0;
+    border-radius: 4px;
+    background: #4cb1ca;
+    color: #ffffff;
+}
+.jq-selectbox li {
+    min-height: 18px;
+    padding: 5px 10px 6px;
+    color: #ffffff;
+    transition: 0.3s;
+}
+.jq-selectbox li.selected {
+    background-color: #7db122;
+    color: #FFF;
+}
+.jq-selectbox li:hover {
+    background-color: #7db122;
+    color: #FFF;
+}
+.jq-selectbox li.disabled {
+    color: #AAA;
+}
+.jq-selectbox li.disabled:hover {
+    background: none;
+}
+
+/*-----------------------Конец стилей для кастомизированного селекта"------------------------*/
+
 
 /*-----------------------Начало блока "header__navigation"------------------------*/
 .header__wrap {
     padding: 29px 0;
+    line-height: 0;
+    font-size: 1px;
 }
 .header__logo {
     vertical-align: middle;
     line-height: normal;
-    margin-right: 41px;
+    margin-right: 38px;
 }
 .logo {
     color: #656565;
@@ -177,7 +265,7 @@ body {
 .header__nav {
     vertical-align: middle;
     line-height: normal;
-    margin-right: 99px;
+    margin-right: 100px;
 }
 .top_nav__item {
     border-bottom: 1px solid transparent;
@@ -191,7 +279,7 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: -0.14px;
-    padding: 9px 11px;
+    padding: 9px 12.5px;
     transition: 0.5s;
     /*border-bottom: 1px solid #656565;*/
 }
@@ -217,7 +305,7 @@ body {
 .header__search {
     line-height: normal;
     vertical-align: middle;
-    margin-right: 8px;
+    margin-right: 13px;
 }
 .search__form {
     position: relative;
@@ -228,7 +316,7 @@ body {
     border: 1px solid #c6c6c6;
     background-color: #ffffff;
     font-size: 13px;
-    padding-left: 10px;
+    padding-left: 7px;
     position: relative;
     z-index: 50;
 }
@@ -252,10 +340,11 @@ body {
 }
 .header__purchases {
     line-height: normal;
-    width: 150px;
+    /*width: 150px;*/
     vertical-align: middle;
 }
 .header__labels {
+    margin-right: 4px;
     width: 35px;
     height: 35px;
     border-radius: 50%;
@@ -272,7 +361,7 @@ body {
     border-radius: 50%;
     vertical-align: middle;
     background: #7db122 url("../img/ico_basket.png") center center no-repeat;
-    margin-right: 11px;
+    margin-right: 13px;
     transition: 0.3s;
 }
 .header__busket:hover {
@@ -284,6 +373,7 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: -0.14px;
+    vertical-align: middle;
 }
 /*-----------------------Конец блока "header__navigation"------------------------*/
 
@@ -361,10 +451,11 @@ body {
 .container {
     padding-top: 38px;
     padding-bottom: 50px;
+    line-height: 0;
+    font-size: 1px;
 }
 .content {
-    margin-right: -7px;
-    max-width: 77.25%;
+    max-width: 77.1%;
 }
 .featured-product {
     margin-bottom: 20px;
@@ -595,6 +686,7 @@ body {
     border-top: 4px solid #4cb1ca;
     background-color: #ffffff;
     padding: 17px 22px 31px;
+    line-height: normal;
 }
 .subscribe__title {
     text-align: center;
@@ -921,7 +1013,7 @@ body {
     border: 1px solid #ffffff;
 }
 .socials__item:hover {
-    transform: scale(1.1,1.1);
+    /*transform: scale(1.1,1.1);*/
     border: 1px solid #7db122;
 }
 .social-ico__google-plus {
