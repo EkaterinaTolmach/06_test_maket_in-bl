@@ -447,8 +447,9 @@ body {
     display: inline-block;
     width: 47px;
     height: 47px;
+    border-radius: 50%;
     content: "";
-    background: url("../img/ico_add_busket.png") center center no-repeat;
+    background: #7db122 url("../img/ico_add_basket.png") center center no-repeat;
 }
 .product-item__name {
     color: #464148;
