@@ -104,7 +104,7 @@ body {
 .options__choose-lang:hover::after, .options__choose-currency:hover::after {
     transform: rotateZ(90deg);
 }
-.language__form, .currency__form {
+.options__form {
     display: inline-block;
 }
 .options__choose-lang::after, .options__choose-currency::after {
@@ -1072,3 +1072,4 @@ body {
     display: none;
 }
 /*-----------------------Конец блока "footer"------------------------*/
+
