@@ -935,7 +935,8 @@ body {
     background-color: #0b4b5a;
 }
 .bottom-nav__wrap {
-    padding-left: 5px;
+    padding-left: 6px;
+    /*padding-right: 3px;*/
 }
 .bottom-nav__copy {
     display: inline-block;
@@ -952,5 +953,24 @@ body {
     display: inline-block;
     color: #8adcf0;
     padding: 20px 10px 20px;
+    position: relative;
+    transition: 0.3s;
+}
+.bottom-nav__item:hover {
+    color: #ffffff;
+}
+.bottom-nav__item::after {
+    display: inline-block;
+    content: "";
+    background-color: #39a0b9;
+    height: 13px;
+    width: 1px;
+    position: absolute;
+    right: 0;
+    top: 39%;
+    /*margin-top: auto 0;*/
+}
+.bottom-nav__item:last-child::after {
+    display: none;
 }
 /*-----------------------Конец блока "footer"------------------------*/
