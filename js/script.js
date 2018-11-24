@@ -21,11 +21,13 @@ $(document).ready(function() {
     }
 
     (function($) {
-        $(function() {
+        if($('.options__select')) {
+            $(function () {
 
-            $('select').styler();
+                $('.options__select').styler();
 
-        });
+            });
+        }
     })(jQuery);
 
 });
