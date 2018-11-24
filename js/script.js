@@ -15,8 +15,17 @@ $(document).ready(function() {
         $('.aside-slider__wrap').slick({
             infinite: true,
             dots: true,
-            autoplay: true
+            arrows: false,
+            // autoplay: true
         });
     }
+
+    (function($) {
+        $(function() {
+
+            $('select').styler();
+
+        });
+    })(jQuery);
 
 });
