@@ -86,7 +86,7 @@ body {
     background: #4cb1ca;
 }
 .header__container {
-    /*padding: 10px 0;*/
+    /*padding-right: 10px;*/
     text-align: justify;
 }
 .header__options {
@@ -94,12 +94,12 @@ body {
     line-height: normal;
 }
 .options {
-    max-width: 255px;
+    /*max-width: 255px;*/
     font-size: 13px;
 }
 .options__choose-lang, .options__choose-currency {
     color: #ffffff;
-    transition: 0.3;
+    transition: 0.3s;
 }
 .options__choose-lang:hover::after, .options__choose-currency:hover::after {
     transform: rotateZ(90deg);
@@ -114,7 +114,7 @@ body {
     background: url("../img/arrow_down.png") center bottom no-repeat;
 }
 .header__account-menu {
-    max-width: 360px;
+    /*max-width: 360px;*/
     line-height: normal;
 }
 .options__languages {
@@ -132,27 +132,32 @@ body {
 .account-menu__item {
     text-align: center;
     font-size: 13px;
+    position: relative;
 }
 .account-menu__link {
     color: #ffffff;
-    padding: 12px 10px;
+    padding: 12px 12px;
     transition: 0.2s;
+    position: relative;
 }
 .account-menu__link:hover {
     color: rgba(154, 226, 244, 0.8);
 }
-/*.account-menu__item::after {*/
-    /*vertical-align: middle;*/
-    /*display: inline-block;*/
-    /*content: "";*/
-    /*width: 1px;*/
-    /*margin: 0 15px;*/
-    /*height: 11px;*/
-    /*background-color: #ffffff;*/
-/*}*/
+.account-menu__item::after {
+    position: absolute;
+    right: 0;
+    top: 40%;
+    display: inline-block;
+    content: "";
+    width: 1px;
+    height: 11px;
+    background-color: #ffffff;
+}
+.account-menu__item:last-child::after {
+    display: none;
+}
 
-
-/*-----------------------Конец блока "header__account-options"------------------------*/
+    /*-----------------------Конец блока "header__account-options"------------------------*/
 
 /*-----------------------Начало блока "header__navigation"------------------------*/
 .header__wrap {
