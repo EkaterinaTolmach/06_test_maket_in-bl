@@ -485,7 +485,7 @@ body {
 .main-slider__descr {
     position: absolute;
     top: 187px;
-    left: 236px;
+    left: 23.04%;
 }
 .main-slider__title {
     padding: 5px 15px;
@@ -523,6 +523,7 @@ body {
 }
 .featured-product__items {
     padding-left: 3px;
+    text-align: center;
 }
 .section-title {
     color: #635f57;
@@ -588,6 +589,7 @@ body {
     text-align: center;
 }
 .product-item__descr {
+    text-align: left;
     padding-left: 3px;
     margin-top: 8px;
     vertical-align: middle;
@@ -1238,6 +1240,9 @@ body {
     .header__nav {
         max-width: 322px;
     }
+    .main-slider__title, .main-slider__subtitle {
+        font-size: 22px;
+    }
 
 }
 @media all and (max-width: 530px) {
@@ -1259,6 +1264,9 @@ body {
     }
     .header__search {
         margin-left: 50px;
+    }
+    .main-slider {
+        display: none;
     }
 }
 @media all and (max-width: 480px) {
