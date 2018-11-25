@@ -855,12 +855,12 @@ body {
     color: #ffffff;
     /*border: 1px solid transparent;*/
 }
-.footer__shipping-link:hover::before {
+.footer__shipping:hover::before {
     transform: scale(1.1,1.1);
     /*transform: translateY(-5px);*/
     border: 1px solid #7db122;
 }
-.footer__call-link:hover::before {
+.footer__call-info:hover::before {
     transform: scale(1.1,1.1);
     /*transform: translateY(-5px);*/
     border: 1px solid #7db122;
